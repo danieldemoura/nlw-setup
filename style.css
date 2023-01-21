@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background-color: #09090A;
+    --font-text: "Inter", sans-serif;
+    --font-day: "Roboto Mono", sans-serif;
+    --font-color-day: #A1A1AA;
+    --button-border-color: #8B5CF6;
+    --checkbox-background-color: #8B5CF6;
+    --checkbox-border-color: #A78BFA;
+}
+
+body {
+    background-color: var(--body-background-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 48px;
+
+    position: fixed;
+    background-color: var(--body-background-color);
+    width: 100%;
+}
+
+header .buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.buttons button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--button-border-color);
+
+    background-color: transparent;
+    color: white;
+
+    font-family: var(--font-text);
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #8b5cf624;
+}
+
+header + form {
+    display: flex;
+    margin-left: 48px;
+
+    padding: 183px 48px 48px 0px;
+    width: fit-content;
+}
+
+.habits {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 50px 0px 0px;
+}
+
+.habit {
+    width: 40px;
+    height: 64px;
+    font-size: 30px;
+
+    display: grid;
+    place-items: center;
+}
+
+.days {
+    display: flex;
+    gap: 48px;
+    margin-left: 32px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div{
+    font-family: var(--font-day);
+    color: var(--font-color-day);
+    font-size: 20px;
+    text-align: center;
+}
+
+.day input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 2px solid var(--checkbox-border-color);
+
+    cursor: pointer;
+}
+
+.day input:checked {
+    background-color: var(--checkbox-background-color);
+}
+
+dialog {
+    background-color: transparent;
+    border: none;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+dialog form {
+    width: fit-content;
+    display: grid;
+    gap: 20px;
+
+    font-family: var(--font-text);
+    background-color: #18181B;
+    color: white;
+
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 0px #00000099;
+}
+
+dialog form *:not(img) {
+   width: 100%;
+}
+
+dialog form label {
+    display: block;
+    padding: 0px 0px 12px 0px;
+    font-size: 16px;
+}
+
+
+dialog form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #27272A;
+    background-color: #27272A;
+    color: #A1A1AA;
+}
+
+::-webkit-input-placeholder {
+    color: #A1A1AA;
+}
+
+dialog form input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #27272A;
+    background-color: #27272A;
+    padding: 10px;
+    color: #A1A1AA;
+}
+
+dialog form button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #16A34A;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+dialog form button:hover {
+    background-color: #8B5CF6;
+}
+
+@media (max-width: 712px) {
+    button div {
+        display: none;
+    }
+}

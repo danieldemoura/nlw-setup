@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/icon.png">
+    <title>Habits</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
+      <div class="buttons">
+        <button type="button" id="btn-habito">
+          📅
+          <div>
+            Registrar meu dia
+          </div>
+        </button>
+      </div>
+    </header>
+
+    <form>
+      <div class="habits">
+        <div class="habit" data-name="estudar" title="Estudar Programação">👨‍💻</div>
+        <div class="habit" data-name="assistirFilmes" title="Assistir: Animes, Filmes ou Séries">📺️</div>
+        <div class="habit" data-name="exercicio" title="Fazer Exercícios Físicos">🏋️‍♀️</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
