@@ -49,10 +49,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📘 O que aprendi?
 
-- ✅ Salvar alterações da aplicação em Local Storage
-- ✅ Convert um Objeto para um texto utilizando a função JSON.stringify()
-- ✅ Converter um texto para um Objeto utilizando JSON.parse()
-- ✅ Criar o arquivo .gitingore para o Git não rastrear arquivos ou pastas específicas como por exemplo o arquivo .vscode
+✅ Salvar alterações da aplicação em Local Storage
+
+✅ Convert um Objeto para um texto utilizando a função JSON.stringify()
+
+✅ Converter um texto para um Objeto utilizando JSON.parse()
+
+✅ Criar o arquivo .gitingore para o Git não rastrear arquivos ou pastas específicas como por exemplo o arquivo .vscode
 
 ## 🔖 Layout
 
