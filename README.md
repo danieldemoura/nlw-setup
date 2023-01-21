@@ -51,7 +51,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✅ Salvar alterações da aplicação em Local Storage
 
-✅ Convert um Objeto para um texto utilizando a função JSON.stringify()
+✅ Converter um Objeto para um texto utilizando a função JSON.stringify()
 
 ✅ Converter um texto para um Objeto utilizando JSON.parse()
 
